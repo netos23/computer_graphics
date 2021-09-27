@@ -26,7 +26,6 @@ class Triangle(
 
 
     override fun render(g: Graphics2D) {
-
         g.color = fillConfig.fill
         if (fillConfig.useFill) {
             g.fillPolygon(xPoints, yPoints, xPoints.size)
