@@ -2,8 +2,7 @@ package ru.fbtw.core
 
 import ru.fbtw.core.shapes.Rectangle
 import ru.fbtw.core.shapes.Shape
-import ru.fbtw.core.shapes.Triangle
-import ru.fbtw.core.util.ColorConfig
+import ru.fbtw.core.util.StrokeConfig
 import java.awt.*
 import javax.swing.JPanel
 import javax.swing.JFrame
@@ -13,7 +12,7 @@ internal class DrawPanel : JPanel() {
     private val shapes = listOf<Shape>(
         Rectangle(
             0, 0, 1000, 1000,
-            ColorConfig(useStroke = false, useFill = true, fill = Color.PINK)
+            StrokeConfig(useStroke = false, useFill = true, fill = Color.PINK)
         ),
     )
 
