@@ -1,11 +1,13 @@
 package ru.fbtw.core.shapes
 
+import ru.fbtw.core.util.ColorConfig
 import ru.fbtw.core.util.Rectangle2D
 import java.awt.Graphics2D
 
 class Point constructor(
     private val x: Int,
-    private val y: Int
+    private val y: Int,
+    override val colorConfig: ColorConfig = ColorConfig()
 ) : Shape {
     override val boundingRectangle: Rectangle2D = Rectangle2D(x, y, 0, 0)
 
