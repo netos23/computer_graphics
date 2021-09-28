@@ -1,6 +1,7 @@
 package ru.fbtw.core
 
 import ru.fbtw.core.shapes.House
+import ru.fbtw.core.shapes.Parachute
 import ru.fbtw.core.shapes.Rectangle
 import ru.fbtw.core.shapes.Shape
 import ru.fbtw.core.util.FillConfig
@@ -24,7 +25,13 @@ internal class DrawPanel : JPanel() {
         House(
             0.3,0.5,0.1,
             boundingRectangle = Rectangle2D(100,100,200,300)
-        )
+        ),
+        Parachute(
+            archCount = 10,
+            mainColor = Color.orange,
+            bgColor = Color.pink,
+            boundingRectangle = Rectangle2D(400,100,300,300)
+        ),
     )
 
     private fun render(g: Graphics) {

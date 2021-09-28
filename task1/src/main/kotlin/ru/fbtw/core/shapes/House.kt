@@ -14,7 +14,7 @@ class House(
     basementColor: Color = Color.RED,
     roofColor: Color = Color.gray,
     override val boundingRectangle: Rectangle2D,
-    override val strokeConfig: StrokeConfig
+    override val strokeConfig: StrokeConfig = StrokeConfig()
 ) : Shape {
     private val roofY = (boundingRectangle.y + boundingRectangle.height * roofFactor).toInt()
     private val topX = (boundingRectangle.x + boundingRectangle.width * topFactor).toInt()
