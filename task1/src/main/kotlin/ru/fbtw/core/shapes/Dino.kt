@@ -30,7 +30,8 @@ class Dino(
         fillConfig = FillConfig(
             useFill = true,
             fill = mainColor
-        )
+        ),
+        strokeConfig = strokeConfig
     )
 
     val head = Triangle(
@@ -49,7 +50,8 @@ class Dino(
         fillConfig = FillConfig(
             useFill = true,
             fill = mainColor
-        )
+        ),
+        strokeConfig = strokeConfig
     )
 
     val leftFoot = Triangle(
@@ -68,7 +70,8 @@ class Dino(
         fillConfig = FillConfig(
             useFill = true,
             fill = accentColor
-        )
+        ),
+        strokeConfig = strokeConfig
     )
 
     val rightFoot = Triangle(
@@ -87,7 +90,8 @@ class Dino(
         fillConfig = FillConfig(
             useFill = true,
             fill = accentColor
-        )
+        ),
+        strokeConfig = strokeConfig
     )
 
     val hand = Triangle(
@@ -106,7 +110,8 @@ class Dino(
         fillConfig = FillConfig(
             useFill = true,
             fill = accentColor
-        )
+        ),
+        strokeConfig = strokeConfig
     )
 
     override fun render(g: Graphics2D) {

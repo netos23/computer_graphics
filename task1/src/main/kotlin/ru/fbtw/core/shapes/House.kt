@@ -8,9 +8,9 @@ import java.awt.Color
 import java.awt.Graphics2D
 
 class House(
-    roofFactor: Double,
-    topFactor: Double,
-    offset: Double,
+    roofFactor: Double = 0.2,
+    topFactor: Double = 0.5,
+    offset: Double = 0.1,
     basementColor: Color = Color.RED,
     roofColor: Color = Color.gray,
     override val boundingRectangle: Rectangle2D,
