@@ -12,7 +12,7 @@ class Line(
     private val y1: Int,
     private val x2: Int,
     private val y2: Int,
-    private val strokeConfig: StrokeConfig = StrokeConfig()
+    override val strokeConfig: StrokeConfig = StrokeConfig()
 ) : Shape {
     override val boundingRectangle: Rectangle2D = Rectangle2D(
         x = min(x1, x2),

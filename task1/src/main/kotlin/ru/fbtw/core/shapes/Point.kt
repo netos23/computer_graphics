@@ -7,7 +7,7 @@ import java.awt.Graphics2D
 class Point constructor(
     private val x: Int,
     private val y: Int,
-    private val strokeConfig: StrokeConfig = StrokeConfig()
+    override val strokeConfig: StrokeConfig = StrokeConfig()
 ) : Shape {
     override val boundingRectangle: Rectangle2D = Rectangle2D(x, y, 0, 0)
 

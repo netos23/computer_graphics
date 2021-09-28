@@ -10,7 +10,7 @@ class Rectangle(
     private val y: Int,
     private val width: Int,
     private val height: Int,
-    private val strokeConfig: StrokeConfig = StrokeConfig(),
+    override val strokeConfig: StrokeConfig = StrokeConfig(),
     private val fillConfig: FillConfig = FillConfig()
 ) : Shape {
     override val boundingRectangle: Rectangle2D = Rectangle2D(x, y, width, height)

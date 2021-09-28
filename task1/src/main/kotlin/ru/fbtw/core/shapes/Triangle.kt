@@ -11,7 +11,7 @@ class Triangle(
     point1: Point2D,
     point2: Point2D,
     point3: Point2D,
-    private val strokeConfig: StrokeConfig = StrokeConfig(),
+    override val strokeConfig: StrokeConfig = StrokeConfig(),
     private val fillConfig: FillConfig = FillConfig()
 ) : Shape {
     private val xPoints = intArrayOf(point1.x, point2.x, point3.x)

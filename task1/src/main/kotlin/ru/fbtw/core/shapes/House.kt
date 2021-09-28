@@ -13,7 +13,8 @@ class House(
     offset: Double,
     basementColor: Color = Color.RED,
     roofColor: Color = Color.gray,
-    override val boundingRectangle: Rectangle2D
+    override val boundingRectangle: Rectangle2D,
+    override val strokeConfig: StrokeConfig
 ) : Shape {
     private val roofY = (boundingRectangle.y + boundingRectangle.height * roofFactor).toInt()
     private val topX = (boundingRectangle.x + boundingRectangle.width * topFactor).toInt()
@@ -26,9 +27,7 @@ class House(
             useFill = true,
             fill = roofColor
         ),
-        strokeConfig = StrokeConfig(
-            useStroke = false
-        )
+        strokeConfig = strokeConfig
     )
     private val basement = Rectangle(
         x = (boundingRectangle.x + boundingRectangle.width * offset).toInt(),
@@ -39,9 +38,7 @@ class House(
             useFill = true,
             fill = basementColor
         ),
-        strokeConfig = StrokeConfig(
-            useStroke = false
-        )
+        strokeConfig = strokeConfig
     )
 
     override fun render(g: Graphics2D) {
